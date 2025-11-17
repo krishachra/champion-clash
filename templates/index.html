@@ -4,21 +4,30 @@
   <meta charset="UTF-8">
   <title>Champion Clash</title>
   <link rel="stylesheet" href="/static/css/style.css">
+
 </head>
 <body>
 
   <video autoplay muted loop id="bg-video">
     <source src="/static/media/background.mp4" type="video/mp4">
-    Your browser does not support the video tag.
+    
   </video>
 
-  <div class="overlay">
-    <h1>Champion Clash</h1>
-    <a href="/select" class="play-btn">Play</a>
-  </div>
-  <video autoplay muted loop id="bg-video">
-  <source src="/static/media/background.mp4" type="video/mp4">
-</video>
+<div class="overlay">
+  <h1>Champion Clash</h1>
+  
+  <form action="/login" method="POST" class="login-form">
+    <input type="text" name="username" placeholder="Enter Username" required>
+    <input type="password" name="password" placeholder="Enter Password" required>
+    <button type="submit" class="play-btn">Log In</button>
+  </form>
+
+  <p class="signup-link">Don’t have an account? <a href="/signup">Sign Up</a></p>
+</div>
+
+  
+  
+
 
 
 </body>
