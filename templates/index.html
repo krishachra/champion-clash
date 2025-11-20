@@ -2,46 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Champion Clash</title>
   <link rel="stylesheet" href="/static/css/style.css">
-
 </head>
 <body>
+
+  <!-- Fixed Header -->
   <header class="banner">
+    <div class="logo">
+      <img src="/static/media/logo.png" alt="Champion Clash Logo">
+      <h1>mythbound<br>Studios</h1>
+    </div>
     <nav>
       <a href="#about">About</a>
       <a href="#features">Features</a>
       <a href="#leaderboard">Leaderboard</a>
-    </nav>
-
+      <button class="login-btn">Login</button>
     </nav>
   </header>
 
-  <video autoplay muted loop id="bg-video">
-    <source src="/static/media/background.mp4" type="video/mp4">
-    
-  </video>
+  <!-- Hero Section with Video Background -->
+  <section class="hero">
+    <video autoplay muted loop id="bg-video">
+      <source src="/static/media/background.mp4" type="video/mp4">
+    </video>
+    <div class="overlay">
+      <h1>Champion Clash</h1>
+      <p>Enter the arena and prove your might!</p>
+    </div>
+  </section>
 
-<div class="overlay">
-  <h1>Champion Clash</h1>
-  
-  <form action="/login" method="POST" class="login-form">
-    <input type="text" name="username" placeholder="Enter Username" required>
-    <input type="password" name="password" placeholder="Enter Password" required>
-    <button type="submit" class="play-btn">Log In</button>
-  </form>
+  <!-- Scrollable Content Starts Here -->
+  <main>
+    <section id="news">
+      <h2>Latest News</h2>
+      <div class="news-container">
+        <div class="news-item">
+          <h3>Champion Clash Season 2 Begins</h3>
+          <p>New maps, new champions, and a fresh leaderboard. Get ready to clash!</p>
+        </div>
+        <div class="news-item">
+          <h3>Mythbound Studios Expands</h3>
+          <p>We’re opening a new office in Jaipur and hiring developers, designers, and testers.</p>
+        </div>
+        <div class="news-item">
+          <h3>Patch Notes v2.1</h3>
+          <p>Bug fixes, balance updates, and UI improvements. Read the full changelog.</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-  <p class="signup-link">Don’t have an account? <a href="/signup">Sign Up</a></p>
-</div>
-
-  
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Champion Clash | Built by Krish</p>
   </footer>
-  
-
-
 
 </body>
 </html>
+
 
