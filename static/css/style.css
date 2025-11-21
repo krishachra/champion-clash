@@ -1,9 +1,68 @@
+.banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgb(8, 8, 14);
+  color: #fff;
+  display: flex;        
+  align-items: center;   
+  padding: 10px 30px; 
+  z-index: 100;
+}
+.banner:hover {
+  background:gray;
+  transition: background 1s;
+}
+.banner nav a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.banner nav a:hover {
+ color: #00ffcc;
+ transform: scale(1.1); 
+}
+.logo {
+  display: flex;
+  gap: 10px; 
+}
+.banner nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo img {
+  height: 55px;
+  margin: 0;
+  padding: 0;
+}
+.logo h1 {
+  font-size: 1.5rem;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:lighter;
+  color: #1c5a4e;
+  margin: 0;
+  line-height: 1.2;
+  text-decoration:underline;
+}
 
 .hero {
   position: relative;
   height: 100vh;
   overflow: hidden;
+  
 }
+
+
+
+
+
+
+
 
 #bg-video {
   position: absolute;
@@ -24,110 +83,29 @@
   color: #fff;
   z-index: 1;
 }
-
-
-.overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #fff;
-}
-
 .overlay h1 {
   font-size: 4rem;
   font-family: 'Orbitron', sans-serif;
-  color: #00ffcc;
+  color: #365d55;
   text-shadow: 10px 2px 10px #000;
 }
 
-.play-btn {
-  display: inline-block;
+.overlay h1:hover {
+  color: #05b390;
+  transition: color 0.5s;
+}
+
+.overlay p {
+  font-size: 1.5rem;
   margin-top: 20px;
-  padding: 12px 30px;
-  font-size: 1.2rem;
-  color: #fff;
-  background-color: #00ffcc;
-  text-shadow: #000 1px 1px 5px;
-  ;
- 
-}
-
-.play-btn:hover {
-  background-color: #00bf8f;
-  cursor: pointer;
-  text-shadow: #000 10px 10px 10px;
-animation: spin 5s infinite alternate;
-
-}
- 
- @keyframes spin {
-    from {
-        background-color:lightgreen;
-        
-    }
-    to {
-        background-color: lightslategray;
-    }
+  text-shadow: 2px 2px 8px #000;
 }
 
 
-  .login-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.login-form input {
-  margin: 10px 0;
-  padding: 10px;
-  font-size: 1rem;
-  border: none;
-  border-radius: 5px;
-}
 
 
-.banner {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(0,0,0,0.7);
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 30px; /* wider padding for balance */
-  z-index: 1000;
-}
 
 
-.banner h1 {
-  font-size: 2rem;
-  font-family: 'Orbitron', sans-serif;
-  color: #00ffcc;
-  margin: 0;
-}
-
-.banner nav {
-  display: flex;
-  gap: 20px;               
-}
-
-.banner nav a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: bold;
-  transition: color .5s, transform 0.3s;
-}
-
-.banner nav a:hover {
-  color: #00ffcc;
-  
-}
 footer {
   position: fixed;
   bottom: 0;
@@ -139,47 +117,8 @@ footer {
  
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px; /* better spacing between logo and text */
-}
-
-.logo img {
-  height: 50px;
-  width: auto;
-  margin: 0;
-  padding: 0;
-}
-
-.logo h1 {
-  font-size: 1.5rem;
-  font-family: 'Orbitron', sans-serif;
-  font-weight:lighter;
-  color: #2e8372;
-  margin: 0;
-  line-height: 1.2;
-  text-shadow: 2px 2px 8px #000;
-  text-decoration:underline;
-}
-
-
-.banner nav {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.banner nav a {
-  color: #fff;
-  text-decoration:dotted;
-  font-size: 1.1rem;
-  font-weight: bold;
-  transition: color 0.3s, transform 0.3s;
-}
-
 .login-btn {
-  background-color: #00ffcc;
+  background-color: #39554f;
   color: #000;
   font-size: 1rem;
   font-weight: bold;
@@ -196,11 +135,10 @@ footer {
 }
 
 #news {
-  background: #0a0a0a; /* dark clean background */
+  background: #0d0303; 
   color: #fff;
   padding: 60px 20px;
   text-align: center;
-  font-family: 'Orbitron', sans-serif;
 }
 
 #news h2 {
@@ -216,12 +154,10 @@ footer {
   max-height: 400px;
   overflow-y: auto;
   padding: 20px;
-  border: 2px solid #00ffcc;
+  border: 2px solid #00e1ff;
   border-radius: 10px;
-  background: rgba(255,255,255,0.05);
-  box-shadow: 0 0 20px rgba(0,255,204,0.2);
+  background: rgba(35, 184, 234, 0.257);
 }
-
 .news-item {
   margin-bottom: 30px;
   padding-bottom: 20px;
@@ -242,7 +178,9 @@ footer {
 }
 
 
-
+body{
+  margin: 0;
+}
 
 
 
