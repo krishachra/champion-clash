@@ -257,6 +257,46 @@ body{
 
 
 
+.extra-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.signup-btn, .guest-btn, .google-btn {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+
+.signup-btn {
+  background: #007bff;
+}
+
+.signup-btn:hover {
+  background: #0056b3;
+}
+
+.guest-btn {
+  background: #00bf8f;
+}
+
+.guest-btn:hover {
+  background: #00996e;
+}
+
+.google-btn {
+  background: #db4437;
+}
+
+.google-btn:hover {
+  background: #a82f28;
+}
 
 
 
