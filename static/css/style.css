@@ -251,13 +251,13 @@ body{
   font-family: "Fredericka the Great", serif;
   font-size: 3rem;
   color: #00ffcc;
-  text-shadow: 2px 2px 8px #000;
-  margin-bottom: 10px;
+  text-shadow: 2px 7px #000;
+  margin-bottom: 0px;
 }
 .login-title:hover {
-  color: #00e1ff;
-  transition: color 0.5s;
-  text-shadow: #00e1ff 0 0 10px;
+  color: #180466;
+  transition: 1s;
+  text-shadow: beige 0 0 10px;
 
 }
 
@@ -265,12 +265,12 @@ body{
 .login-subtitle {
   font-family: 'Orbitron', sans-serif;
   font-size: 1.2rem;
-  color: #0e1444;
+  color: #04222d;
   margin-bottom: 30px;
 }
 .login-subtitle:hover {
   color: #00ffcc;
-  transition: color 0.5s;
+  transition: color 1s;
   text-shadow: #00e1ff 0 0 10px;
 }
 
@@ -278,20 +278,20 @@ body{
   display: flex;
   flex-direction: column;
   width: 300px;
+  text-align: center;
 }
 
 .login-form input {
-  margin: 10px 0;
+  margin: 10px ;
   padding: 12px;
   font-size: 1rem;
   border: 2px solid #00ffcc;
   border-radius: 5px;
   background: #111;
-  color: #fff;
+  color: #cfd5d4;
 }
 
-.login-form input:focus {
-  outline: none;
+.login-form input:focus{
   border-color: #00bf8f;
   box-shadow: 0 0 8px #00ffcc;
 }
@@ -305,13 +305,13 @@ body{
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: transform 0.3s, background 0.3s;
+  transition: transform 1s;
 }
 
 .login-form .login-btn:hover {
   background-color: #00bf8f;
   color: #fff;
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 .back-home {
@@ -369,7 +369,7 @@ body{
 }
 .extra-options  {
   display: grid;
-  grid-template-columns: 1fr 1fr;  
+  /* grid-template-columns: fr ;   */
   gap: 12px;                    
   margin-top: 20px;
 }
@@ -384,7 +384,7 @@ body{
   height: 100%;
   object-fit: cover;
   z-index:-1;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 /* 
 about section */
@@ -441,11 +441,11 @@ about section */
 .leaderboard-table {
   width: 80%;
   margin: auto;
-  border-collapse: collapse;
+  /* border-collapse: collapse; */
   background: rgba(255,255,255,0.05);
   border-radius: 10px;
-  overflow: hidden;
-  backdrop-filter: blur(5px);
+  /* overflow: hidden; */
+  /* backdrop-filter: blur(5px); */
 }
 
 .leaderboard-table th, 
@@ -455,7 +455,7 @@ about section */
 }
 
 .leaderboard-table tr:hover {
-  background: rgba(0,255,204,0.1);
+  background: rgb(162, 184, 191);
 }
 
 

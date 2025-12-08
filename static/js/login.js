@@ -5,4 +5,3 @@ document.getElementById("login-form").addEventListener("submit", function() {
     alert("Details filled!");
 });
 
-
